@@ -4,6 +4,9 @@ import Link from "next/link";
 import Navlink from "./navlink";
 import DarkModeToggle from "./DarkModeToggle";
 import useDarkMode from "../hooks/useDarkMode";
+import dynamic from "next/dynamic";
+
+const NoSSR = dynamic(() => import("../components/DarkModeToggle"), { ssr: false });
 
 const navLinks = [
 	{
@@ -40,10 +43,7 @@ export default function Navbar() {
 					</ul>
 				</div>
 				<div>
-					<DarkModeToggle
-						modoOscuro={modoOscuro}
-						toggleModoOscuro={toggleModoOscuro}
-					/>
+					<NoSSR modoOscuro={modoOscuro} toggleModoOscuro={toggleModoOscuro} />
 				</div>
 			</div>
 		</nav>
