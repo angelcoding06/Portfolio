@@ -6,6 +6,7 @@ const config: Config = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+	
   theme: {
     extend: {
       backgroundImage: {
@@ -13,6 +14,10 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+				poppins: ['Poppins', 'sans-serif'],
+				urbanist: ['Urbanist', 'sans-serif'],
+			},
     },
   },
   plugins: [],
