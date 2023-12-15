@@ -25,12 +25,6 @@ export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({
 }) => {
 	const [modoOscuro, setModoOscuro] = useState(false);
 
-	useEffect(() => {
-		const prefersDark = window.matchMedia(
-			"(prefers-color-scheme: dark)"
-		).matches;
-		setModoOscuro(prefersDark);
-	}, []);
 
 	useEffect(() => {
 		if (modoOscuro) {
