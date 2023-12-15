@@ -46,7 +46,7 @@ export const MyIcon: React.FC<IconoProps> = ({
 			width="557"
 			height="116"
 			stroke="black"
-			stroke-width="3"
+			strokeWidth="3"
 		/>
 	</svg>
 );
@@ -71,7 +71,7 @@ export const MyIconDark: React.FC<IconoProps> = ({
 			width="557"
 			height="116"
 			stroke="white"
-			stroke-width="3"
+			strokeWidth="3"
 		/>
 	</svg>
 );

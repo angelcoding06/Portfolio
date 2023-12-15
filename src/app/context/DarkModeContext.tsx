@@ -1,7 +1,6 @@
-'use client';
+"use client";
 import type React from "react";
 import { createContext, useContext, useEffect, useState } from "react";
-
 
 import { type DarkModeState } from "../types/DarkModeState";
 
@@ -24,7 +23,6 @@ export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({
 	children,
 }) => {
 	const [modoOscuro, setModoOscuro] = useState(false);
-
 
 	useEffect(() => {
 		if (modoOscuro) {

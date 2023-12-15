@@ -1,10 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import useDarkMode from "../hooks/useDarkMode";
 import Link from "next/link";
 import { MyIcon, MyIconDark } from "./icons/icons";
-export default function Logo({modoOscuro}: {modoOscuro: boolean}) {
-
+export default function Logo({ modoOscuro }: { modoOscuro: boolean }) {
 	const [checked, setChecked] = useState(modoOscuro);
 
 	useEffect(() => {
