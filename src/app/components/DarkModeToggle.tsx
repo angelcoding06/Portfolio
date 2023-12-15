@@ -18,11 +18,11 @@ const DarkModeToggle: React.FC<DarkModeToggleProps> = ({
 	useEffect(() => {
 		setChecked(modoOscuro);
 	}, [modoOscuro]);
-	
+
 	return (
 		<div className="flex items-center">
 			<span className="mr-2">
-				{checked ? <DarkModeIcon/> : <LightModeIcon/>}
+				{checked ? <DarkModeIcon /> : <LightModeIcon />}
 			</span>
 			<label
 				id="switch"
