@@ -30,7 +30,7 @@ const navLinks = [
 	},
 ];
 
-export default function Navbar() {
+const Navbar = () => {
 	const { modoOscuro, toggleModoOscuro } = useDarkMode();
 	const [navbaropen, setOpen] = useState(false);
 	// const [checked, setChecked] = useState(modoOscuro);
@@ -79,4 +79,6 @@ export default function Navbar() {
 			) : null}
 		</nav>
 	);
-}
+};
+
+export default Navbar;

@@ -1,5 +1,10 @@
 import React from "react";
 
-export default function aboutsection() {
-	return <div></div>;
-}
+const Aboutsection = () => {
+	return (
+		<div>
+			<h1>hola mundo</h1>
+		</div>
+	);
+};
+export default Aboutsection;
