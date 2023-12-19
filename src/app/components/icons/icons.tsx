@@ -75,3 +75,30 @@ export const MyIconDark: React.FC<IconoProps> = ({
 		/>
 	</svg>
 );
+
+export const MobileMenuIcon: React.FC<IconoProps> = () => (
+	<svg
+		className="w-6 h-6 text-gray-800 dark:text-gray-200"
+		fill="none"
+		strokeLinecap="round"
+		strokeLinejoin="round"
+		strokeWidth="2"
+		viewBox="0 0 24 24"
+		stroke="currentColor"
+	>
+		<path d="M4 6h16M4 12h16M4 18h16"></path>
+	</svg>
+);
+export const CloseMobileMenu: React.FC<IconoProps> = () => (
+	<svg
+		className="w-6 h-6 text-gray-800 dark:text-gray-200"
+		fill="none"
+		strokeLinecap="round"
+		strokeLinejoin="round"
+		strokeWidth="2"
+		viewBox="0 0 24 24"
+		stroke="currentColor"
+	>
+		<path d="M6 18L18 6M6 6l12 12"></path>
+	</svg>
+);
