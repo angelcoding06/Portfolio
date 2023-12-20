@@ -13,7 +13,7 @@ const MobileMenu: React.FC<linkprops> = ({ links, closeMenu }) => {
 	const { modoOscuro, toggleModoOscuro } = useDarkMode();
 	return (
 		<aside className="flex flex-row justify-between mx-auto md:hidden">
-			<ul className="flex flex-col items-left pl-10">
+			<ul className="flex flex-col items-left pl-10 mb-2">
 				{links.map((link, index) => (
 					<li key={index}>
 						<NavLink
