@@ -6,7 +6,7 @@ export default function Home() {
 	return (
 		<main className="flex min-h-screen bg-[#f0f1f1] dark:bg-[#221e1e]">
 			<Navbar />
-			<div className="container mt-24 mx-auto px-12 py-4">
+			<div className="container mt-24 mx-auto px-5 py-4 sm:px-12 lg:px-28">
 				<HomeSection/>
 				<div id="about" className=" bg-cyan-300">
 					<Aboutsection  />

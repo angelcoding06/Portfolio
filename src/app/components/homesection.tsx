@@ -7,7 +7,7 @@ const HomeSection = () => {
 	const text =
 		"I'm Systems engineering student at National University of Colombia and Jr Front-End developer.";
 	return (
-		<section className="pt-4 pb-16 sm:py-12 lg:py-16" id="home">
+		<section className="pt-4 pb-16 sm:py-12 lg:py-32" id="home">
 			<div className="flex flex-col md:flex-row items-center justify-between">
 				<div className="md:pr-12 pb-5 md:pb-0">
 					<h1 className="font-extrabold text-black dark:text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal justify-center">
@@ -37,13 +37,17 @@ const HomeSection = () => {
 						</Link>
 					</div>
 				</div>
-				<Image
-					src={ProfilePic}
-					className="rounded-full shadow-2xl shadow-orange-600 "
-					width={250}
-					height={250}
-					alt="Angel Profile Picture"
-				/>
+				<figure>
+					<Image
+						src={ProfilePic}
+						className="rounded-full shadow-2xl shadow-orange-600 "
+						width={250}
+						height={250}
+						alt="Angel Profile Picture"
+						priority={true}
+						placeholder="empty"
+					/>
+				</figure>
 			</div>
 		</section>
 	);
