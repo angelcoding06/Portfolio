@@ -12,7 +12,7 @@ type linkprops = {
 const MobileMenu: React.FC<linkprops> = ({ links, closeMenu }) => {
 	const { modoOscuro, toggleModoOscuro } = useDarkMode();
 	return (
-		<div className="flex flex-col md:hidden">
+		<aside className="flex flex-col md:hidden">
 			<div className="pl-4">
 				<DarkModeToggle
 					modoOscuro={modoOscuro}
@@ -26,7 +26,7 @@ const MobileMenu: React.FC<linkprops> = ({ links, closeMenu }) => {
 					</li>
 				))}
 			</ul>
-		</div>
+		</aside>
 	);
 };
 

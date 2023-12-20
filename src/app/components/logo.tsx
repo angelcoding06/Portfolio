@@ -7,7 +7,6 @@ const Logo = ({ modoOscuro }: { modoOscuro: boolean }) => {
 
 	useEffect(() => {
 		setChecked(modoOscuro);
-		console.log("modoOscuro: ", checked);
 	}, [modoOscuro]);
 
 	return <Link href="./">{!checked ? <MyIcon /> : <MyIconDark />}</Link>;
