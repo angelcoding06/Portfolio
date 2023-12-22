@@ -11,7 +11,6 @@ export const useDarkMode = (): DarkModeState => {
 	if (!context) {
 		throw new Error("useDarkMode must be used within a DarkModeProvider");
 	}
-
 	return context;
 };
 
@@ -22,13 +21,22 @@ type DarkModeProviderProps = {
 export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({
 	children,
 }) => {
-	const [modoOscuro, setModoOscuro] = useState(false);
+	const [modoOscuro, setModoOscuro] = useState(() => {
+		const localStorageTheme = localStorage.getItem("theme");
+		return (
+			localStorageTheme === "dark" ||
+			(!localStorageTheme &&
+				window.matchMedia("(prefers-color-scheme: dark)").matches)
+		);
+	});
 
 	useEffect(() => {
 		if (modoOscuro) {
-			document.body.classList.add("dark");
+			document.documentElement.classList.add("dark");
+			localStorage.setItem("theme", "dark");
 		} else {
-			document.body.classList.remove("dark");
+			document.documentElement.classList.remove("dark");
+			localStorage.setItem("theme", "light");
 		}
 	}, [modoOscuro]);
 
@@ -36,7 +44,23 @@ export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({
 		setModoOscuro(!modoOscuro);
 	};
 
-	// Validar los valores con Zod antes de asignarlos al contexto
+	const handleOsPreference = () => {
+		localStorage.removeItem("theme");
+		setModoOscuro(window.matchMedia("(prefers-color-scheme: dark)").matches);
+	};
+
+	useEffect(() => {
+		window
+			.matchMedia("(prefers-color-scheme: dark)")
+			.addEventListener("change", handleOsPreference);
+		return () => {
+			window
+				.matchMedia("(prefers-color-scheme: dark)")
+				.removeEventListener("change", handleOsPreference);
+		};
+	}, []);
+
+
 	const contextValue = {
 		modoOscuro,
 		toggleModoOscuro,
