@@ -22,21 +22,26 @@ export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({
 	children,
 }) => {
 	const [modoOscuro, setModoOscuro] = useState(() => {
-		const localStorageTheme = localStorage.getItem("theme");
-		return (
-			localStorageTheme === "dark" ||
-			(!localStorageTheme &&
-				window.matchMedia("(prefers-color-scheme: dark)").matches)
-		);
+		if (typeof window !== "undefined") {
+			const localStorageTheme = localStorage.getItem("theme");
+			return (
+				localStorageTheme === "dark" ||
+				(!localStorageTheme &&
+					window.matchMedia("(prefers-color-scheme: dark)").matches)
+			);
+		}
+		return false; // Default to false if window or localStorage is unavailable
 	});
 
 	useEffect(() => {
-		if (modoOscuro) {
-			document.documentElement.classList.add("dark");
-			localStorage.setItem("theme", "dark");
-		} else {
-			document.documentElement.classList.remove("dark");
-			localStorage.setItem("theme", "light");
+		if (typeof window !== "undefined") {
+			if (modoOscuro) {
+				document.documentElement.classList.add("dark");
+				localStorage.setItem("theme", "dark");
+			} else {
+				document.documentElement.classList.remove("dark");
+				localStorage.setItem("theme", "light");
+			}
 		}
 	}, [modoOscuro]);
 
@@ -45,21 +50,24 @@ export const DarkModeProvider: React.FC<DarkModeProviderProps> = ({
 	};
 
 	const handleOsPreference = () => {
-		localStorage.removeItem("theme");
-		setModoOscuro(window.matchMedia("(prefers-color-scheme: dark)").matches);
+		if (typeof window !== "undefined") {
+			localStorage.removeItem("theme");
+			setModoOscuro(window.matchMedia("(prefers-color-scheme: dark)").matches);
+		}
 	};
 
 	useEffect(() => {
-		window
-			.matchMedia("(prefers-color-scheme: dark)")
-			.addEventListener("change", handleOsPreference);
-		return () => {
+		if (typeof window !== "undefined") {
 			window
 				.matchMedia("(prefers-color-scheme: dark)")
-				.removeEventListener("change", handleOsPreference);
-		};
+				.addEventListener("change", handleOsPreference);
+			return () => {
+				window
+					.matchMedia("(prefers-color-scheme: dark)")
+					.removeEventListener("change", handleOsPreference);
+			};
+		}
 	}, []);
-
 
 	const contextValue = {
 		modoOscuro,
