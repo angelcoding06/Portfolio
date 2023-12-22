@@ -23,7 +23,7 @@ const Aboutsection = () => {
 			className="flex flex-col justify-between scroll-my-28 py-12 border-solid border-t-2 border-orange-600 "
 			id="about"
 		>
-			<h1 className="font-extrabold text-center text-black dark:text-white mb-8 text-4xl sm:text-5xl lg:text-5xl lg:leading-normal justify-center">
+			<h1 className="font-extrabold text-center text-black dark:text-white mb-8 text-4xl lg:text-5xl lg:leading-normal justify-center">
 				About
 			</h1>
 			<div className="flex flex-col items-center content-center justify-between">
@@ -34,7 +34,7 @@ const Aboutsection = () => {
 					impedit in!
 				</p>
 				<div className="flex flex-col items-center gap-7 md:gap-14 mt-16 ">
-					<h2 className=" font-semibold md:text-3xl hover:text-black dark:text-white">
+					<h2 className=" font-semibold text-3xl hover:text-black dark:text-white">
 						Skills
 					</h2>
 					<ul className="list-none  grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-4 text-black dark:text-white ">
@@ -53,7 +53,7 @@ const Aboutsection = () => {
 					</ul>
 				</div>
 				<div className="flex flex-col items-center gap-7 md:gap-14 mt-16 ">
-					<h2 className=" font-semibold md:text-3xl hover:text-black dark:text-white">
+					<h2 className=" font-semibold text-3xl hover:text-black dark:text-white">
 						Education
 					</h2>
 					<div className="flex flex-col lg:flex-row items-center justify-between">
