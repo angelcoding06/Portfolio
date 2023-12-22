@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ProfilePic from "../../../public/profilepic.jpg";
+import ProfilePic from "../../../../public/profilepic.jpg";
 import Link from "next/link";
 const HomeSection = () => {
 	const Title = " I'm Angel.";

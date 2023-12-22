@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "./components/navbar";
-import Aboutsection from "./components/aboutsection";
-import HomeSection from "./components/homesection";
+import Aboutsection from "./components/sections/aboutsection";
+import HomeSection from "./components/sections/homesection";
 export default function Home() {
 	return (
 		<main className="flex min-h-screen bg-[#f0f1f1] dark:bg-[#221e1e]">
