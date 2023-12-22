@@ -4,10 +4,13 @@ import { useState } from "react";
 import Navlink from "./navlink";
 import { useDarkMode } from "../context/DarkModeContext";
 import dynamic from "next/dynamic";
-import Logo from "../components/logo";
 import MobileMenu from "../components/mobilemenu";
 import { MobileMenuIcon, CloseMobileMenu } from "../components/icons/icons";
+// TODO : Fix dynamic import
 const DarkModeNoSSR = dynamic(() => import("../components/DarkModeToggle"), {
+	ssr: false,
+});
+const LogoNoSSR = dynamic(() => import("../components/logo"), {
 	ssr: false,
 });
 
@@ -33,18 +36,14 @@ const navLinks = [
 const Navbar = () => {
 	const { modoOscuro, toggleModoOscuro } = useDarkMode();
 	const [navbaropen, setOpen] = useState(false);
-	// const [checked, setChecked] = useState(modoOscuro);
 
-	// useEffect(() => {
-	// 	setChecked(modoOscuro);
-	// }, [modoOscuro]);
 	const closeMenu = () => {
-		setOpen(false); // Esta función cambiará el estado para cerrar el menú móvil
+		setOpen(false);
 	};
 	return (
 		<nav className="fixed mx-auto top-0 left-0 right-0 z-10 bg-[#f0f1f1] bg-opacity-100 shadow-lg dark:bg-[#2c2727] dark:shadow-[#ffffff1b] dark:shadow-md ">
 			<div className="container flex flex-wrap items-center justify-between px-5 sm:px-12 py-2 mx-auto lg:py-4 lg:px-28">
-				<Logo modoOscuro={modoOscuro} />
+				<LogoNoSSR modoOscuro={modoOscuro} />
 				<div className="flex items-center animate-pulse px-3 py-2  text-slate-200 hover:text-white hover:border-black dark:border-slate-200 dark:hover:border-white md:hidden">
 					{!navbaropen ? (
 						<button onClick={() => setOpen(true)}>
