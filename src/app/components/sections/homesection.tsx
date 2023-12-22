@@ -12,7 +12,7 @@ const HomeSection = () => {
 				<div className="md:pr-12 pb-5 md:pb-0">
 					<h1 className="font-extrabold text-black dark:text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal justify-center">
 						<span>Hello!</span>
-						<span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-[#ff8949]">
+						<span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-mainOrange">
 							{Title}
 						</span>
 					</h1>
@@ -21,17 +21,17 @@ const HomeSection = () => {
 					</p>
 					<div>
 						<Link
-							href="#projects"
-							className="font-bold px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-pink-500 via-red-500 to-[#ff8949] hover:bg-slate-200 text-white text-center"
+							href="/#projects"
+							className="font-bold px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-pink-500 via-red-500 to-mainOrange hover:bg-slate-200 text-white text-center"
 						>
 							My Projects
 						</Link>
 
 						<Link
 							href="#contact"
-							className="font-bold px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-pink-500 via-red-500 to-[#ff8949] hover:bg-slate-800 text-white mt-3 text-center"
+							className="font-bold px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-pink-500 via-red-500 to-mainOrange hover:bg-slate-800 text-white mt-3 text-center"
 						>
-							<span className="block bg-[#f0f1f1] dark:bg-[#2c2727] rounded-full px-5 py-2 text-black dark:text-white">
+							<span className="block bg-mainWhite dark:bg-mainBlack rounded-full px-5 py-2 text-black dark:text-white">
 								Contact Me
 							</span>
 						</Link>

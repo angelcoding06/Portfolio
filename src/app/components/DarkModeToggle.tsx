@@ -36,7 +36,7 @@ const DarkModeToggle: React.FC<DarkModeToggleProps> = ({
 				/>
 				<span className="slider absolute w-6 h-6 rounded-full bg-orange-100 dark:bg-orange-200">
 					<span
-						className={`absolute top-1 left-1 w-4 h-4 rounded-full bg-gray-400 dark:bg-[#f0f1f1] ${
+						className={`absolute top-1 left-1 w-4 h-4 rounded-full bg-gray-400 dark:bg-mainWhite ${
 							checked ? "transform translate-x-6" : "transform translate-x-0"
 						}`}
 						style={{

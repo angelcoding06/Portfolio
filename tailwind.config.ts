@@ -36,6 +36,12 @@ const config: Config = {
 				"2xl": "1536px",
 				// => @media (min-width: 1536px) { ... }
 			},
+			colors: {
+				"mainOrange": "#ff8949",
+				"mainWhite": "#f0f1f1",
+				"mainBlack": "#2c2727",
+				"pageBlack" : "#221e1e"
+			},
 		},
 	},
 	plugins: [],
