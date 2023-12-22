@@ -7,7 +7,7 @@ type SkillsCardProps = {
 const SkillsCard: React.FC<SkillsCardProps> = ({icon}) => {
 	return (
 		<li className="flex flex-col items-center">
-			<ul className="max-w-[120px] xs:max-w-[150px] md:max-w-none rounded-lg bg-slate-200 select-none hover:shadow hover:shadow-black dark:hover:shadow-white p-2 dark:bg-zinc-800">
+			<ul className="max-w-[120px] xs:max-w-[150px] md:max-w-none rounded-lg bg-orange-100 select-none hover:shadow hover:shadow-mainOrange  p-2 dark:bg-stone-800">
 				<div className="flex flex-col justify-between rounded-md p-6 items-center text-center">
 					{icon}
 				</div>
