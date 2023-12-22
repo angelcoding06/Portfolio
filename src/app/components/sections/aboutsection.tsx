@@ -82,7 +82,7 @@ const Aboutsection = () => {
 					</div>
 				</div>
 				<div className="flex flex-col items-center gap-7 md:gap-14 mt-8 ">
-					<h2 className=" font-semibold md:text-xl hover:text-black dark:text-white">
+					<h2 className=" font-semibold text-3xl hover:text-black dark:text-white">
 						Certifications
 					</h2>
 					<ul className="list-none pl-2 grid grid-flow-col gap-4 text-black dark:text-white">
