@@ -34,15 +34,16 @@ const Aboutsection = () => {
 					I'm <span className="text-mainOrange">Angel</span>, a software
 					developer based in <em>Bogotá</em>, Colombia. I have experience
 					working with JavaScript, TypeScript, React, Redux, NextJS, HTML, CSS,
-					Git and Github. I'm currently learning DataBase manage and backend
-					development using NodeJs, Express, MongoDB and MySQL. I'm familiar
-					with agile development methodologies such as SCRUM.
+					Git and Github. I'm currently learning database management and
+					back-end development using NodeJs, Express, MongoDB and MySQL. I'm
+					familiar with agile development methodologies such as SCRUM.
 				</p>
 				<p className="font-poppins text-black dark:text-white text-base sm:text-lg mb-6 lg:text-xl">
-					When I'm not coding I like play videogames like Valorant, watch anime{" "}
-					<i> (I'm currently watching One Piece)</i>, and read books.
+					When I'm not coding I like to play videogames like Valorant, watch
+					anime <i> (I'm currently watching One Piece)</i>, and read books, the
+					last I read was Nausea by Jean-Paul Sartre.
 				</p>
-				<div className="flex flex-col items-center gap-7 md:gap-14 mt-16 ">
+				<article className="flex flex-col items-center gap-7 md:gap-14 mt-16 ">
 					<h2 className=" font-semibold text-2xl hover:text-black dark:text-white">
 						My Stack
 					</h2>
@@ -60,8 +61,8 @@ const Aboutsection = () => {
 						<SkillsCard icon={<DockerIcon />} />
 						<SkillsCard icon={<LinuxIcon />} />
 					</ul>
-				</div>
-				<div className="flex flex-col items-center gap-7 md:gap-14 mt-16 ">
+				</article>
+				<article className="flex flex-col items-center gap-7 md:gap-14 mt-16 ">
 					<h2 className=" font-semibold text-2xl hover:text-black dark:text-white">
 						Education
 					</h2>
@@ -89,8 +90,8 @@ const Aboutsection = () => {
 							</p>
 						</div>
 					</div>
-				</div>
-				{/* <div className="flex flex-col items-center gap-7 md:gap-14 mt-8 ">
+				</article>
+				{/* <article className="flex flex-col items-center gap-7 md:gap-14 mt-8 ">
 					<h2 className=" font-semibold text-2xl hover:text-black dark:text-white">
 						Certifications
 					</h2>
@@ -98,7 +99,7 @@ const Aboutsection = () => {
 						<li>Fullstack Academy of Code</li>
 						<li>University of California, Santa Cruz</li>
 					</ul>
-				</div> */}
+				</article> */}
 			</div>
 		</section>
 	);
