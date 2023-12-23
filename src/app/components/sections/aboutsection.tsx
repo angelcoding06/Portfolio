@@ -27,15 +27,24 @@ const Aboutsection = () => {
 				About
 			</h1>
 			<div className="flex flex-col items-center content-center justify-between">
+				<h2 className=" font-semibold text-2xl hover:text-black dark:text-white pb-8">
+					Who I'm I?
+				</h2>
 				<p className="font-poppins text-black dark:text-white text-base sm:text-lg mb-6 lg:text-xl">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta commodi
-					ullam reiciendis quo accusantium cupiditate. Nulla, minima sint cumque
-					architecto molestias iure laborum quasi ab ipsa fuga, voluptatem
-					impedit in!
+					I'm <span className="text-mainOrange">Angel</span>, a software
+					developer based in <em>Bogotá</em>, Colombia. I have experience
+					working with JavaScript, TypeScript, React, Redux, NextJS, HTML, CSS,
+					Git and Github. I'm currently learning DataBase manage and backend
+					development using NodeJs, Express, MongoDB and MySQL. I'm familiar
+					with agile development methodologies such as SCRUM.
+				</p>
+				<p className="font-poppins text-black dark:text-white text-base sm:text-lg mb-6 lg:text-xl">
+					When I'm not coding I like play videogames like Valorant, watch anime{" "}
+					<i> (I'm currently watching One Piece)</i>, and read books.
 				</p>
 				<div className="flex flex-col items-center gap-7 md:gap-14 mt-16 ">
-					<h2 className=" font-semibold text-3xl hover:text-black dark:text-white">
-						Skills
+					<h2 className=" font-semibold text-2xl hover:text-black dark:text-white">
+						My Stack
 					</h2>
 					<ul className="list-none  grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-10 gap-y-4 text-black dark:text-white ">
 						<SkillsCard icon={<HtmlIcon />} />
@@ -53,7 +62,7 @@ const Aboutsection = () => {
 					</ul>
 				</div>
 				<div className="flex flex-col items-center gap-7 md:gap-14 mt-16 ">
-					<h2 className=" font-semibold text-3xl hover:text-black dark:text-white">
+					<h2 className=" font-semibold text-2xl hover:text-black dark:text-white">
 						Education
 					</h2>
 					<div className="flex flex-col lg:flex-row items-center justify-between">
@@ -73,23 +82,23 @@ const Aboutsection = () => {
 								National University of Colombia
 							</h3>
 							<p className="font-poppins text-black dark:text-white text-base sm:text-lg lg:text-xl">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-								numquam commodi deleniti ipsam, tempora minima vel architecto
-								eum! Porro debitis illum nobis earum quae reiciendis similique
-								excepturi distinctio modi totam.
+								I'm currently studying
+								<strong> Systems and Computing Engineering</strong> at the
+								National University of Colombia. I'm on my 8th semester and I'm
+								expected to graduate in <strong>2025</strong>.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div className="flex flex-col items-center gap-7 md:gap-14 mt-8 ">
-					<h2 className=" font-semibold text-3xl hover:text-black dark:text-white">
+				{/* <div className="flex flex-col items-center gap-7 md:gap-14 mt-8 ">
+					<h2 className=" font-semibold text-2xl hover:text-black dark:text-white">
 						Certifications
 					</h2>
 					<ul className="list-none pl-2 grid grid-flow-col gap-4 text-black dark:text-white">
 						<li>Fullstack Academy of Code</li>
 						<li>University of California, Santa Cruz</li>
 					</ul>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);
