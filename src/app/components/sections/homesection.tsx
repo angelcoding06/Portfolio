@@ -21,8 +21,8 @@ const HomeSection = () => {
 						{text}
 					</p>
 					<div>
-						<div className="flex items-center justify-between">
-							<div className="inline-block">
+						<div className="flex flex-col items-center md:items-start justify-between lg:flex-row lg:items-center">
+							<div className="">
 								<Link
 									href="#projects"
 									className="font-bold px-6 inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-pink-500 via-red-500 to-mainOrange hover:bg-slate-200 text-white text-center"
