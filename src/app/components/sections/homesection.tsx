@@ -21,7 +21,7 @@ const HomeSection = () => {
 						{text}
 					</p>
 					<div>
-						<div className="flex flex-col items-center md:items-start justify-between lg:flex-row lg:items-center">
+						<div className="flex flex-col items-center sm:items-start md:items-start justify-between lg:flex-row lg:items-center">
 							<div className="">
 								<Link
 									href="#projects"

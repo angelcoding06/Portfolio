@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/navbar";
 import Aboutsection from "./components/sections/aboutsection";
 import HomeSection from "./components/sections/homesection";
+import ProjectSection from "./components/sections/projectsection";
 export default function Home() {
 	return (
 		<main className="flex min-h-screen bg-mainWhite dark:bg-pageBlack">
@@ -10,7 +11,8 @@ export default function Home() {
 				<HomeSection />
 
 				<Aboutsection />
-
+				<ProjectSection />
+				
 				<div id="projects" className="h-screen bg-red-800">
 					<h1>Section 3</h1>
 				</div>
