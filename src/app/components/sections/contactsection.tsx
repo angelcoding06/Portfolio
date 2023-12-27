@@ -5,13 +5,23 @@ import Link from "next/link";
 const ContactSection = () => {
 	const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-	const handleSubmit = async (e) => {
+	const handleSubmit = async (
+		e: React.FormEvent<HTMLFormElement>
+	): Promise<void> => {
 		e.preventDefault();
-		const data = {
-			email: e.target.email.value,
-			subject: e.target.subject.value,
-			message: e.target.message.value,
+		const target = e.target as typeof e.target & {
+			email: { value: string };
+			subject: { value: string };
+			message: { value: string };
 		};
+
+		const data = {
+			email: target.email.value,
+			subject: target.subject.value,
+			message: target.message.value,
+		};
+		// Further code logic using the 'data' object
+
 		const JSONdata = JSON.stringify(data);
 		const endpoint = "/api/send";
 
@@ -29,7 +39,7 @@ const ContactSection = () => {
 
 		const response = await fetch(endpoint, options);
 		const resData = await response.json();
-
+		console.log("resData", resData);
 		if (response.status === 200) {
 			console.log("Message sent.");
 			setEmailSubmitted(true);
