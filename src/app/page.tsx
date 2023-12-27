@@ -9,13 +9,8 @@ export default function Home() {
 			<Navbar />
 			<div className="container mt-24 mx-auto px-5 py-4 sm:px-12 lg:px-28">
 				<HomeSection />
-
 				<Aboutsection />
 				<ProjectSection />
-				
-				<div id="projects" className="h-screen bg-red-800">
-					<h1>Section 3</h1>
-				</div>
 				<div id="contact" className="h-screen bg-amber-500">
 					<h1>Section 3</h1>
 				</div>

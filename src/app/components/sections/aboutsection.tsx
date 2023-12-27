@@ -23,7 +23,7 @@ const Aboutsection = () => {
 			className="flex flex-col justify-between scroll-my-28 py-12 border-solid border-t-2 border-orange-600 "
 			id="about"
 		>
-			<h1 className="font-extrabold text-center text-black dark:text-white mb-8 text-4xl lg:text-5xl lg:leading-normal justify-center">
+			<h1 className="font-extrabold text-center text-mainOrange  mb-8 text-4xl lg:text-5xl lg:leading-normal justify-center">
 				About
 			</h1>
 			<div className="flex flex-col items-center content-center justify-between">
@@ -75,7 +75,7 @@ const Aboutsection = () => {
 								height={100}
 								priority={true}
 								placeholder="empty"
-								className="md:max-w-1/2 lg:max-w-screen-md lg:max-h-screen" // Tailwind classes for width
+								className="md:max-w-1/2 lg:max-w-screen-md lg:max-h-screen"
 							/>
 						</picture>
 						<div className="flex flex-col pt-10 lg:pt-0 lg:pl-36">
