@@ -36,7 +36,7 @@ const ProjectArticle: React.FC<ProjectProps> = ({
 				</div>
 				<div className="flex w-full mt-4 ">
 					<a
-						href=""
+						href={url}
 						className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-4 rounded"
 					>
 						Visit
