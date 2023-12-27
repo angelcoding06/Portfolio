@@ -5,7 +5,7 @@ import HomeSection from "./components/sections/homesection";
 import ProjectSection from "./components/sections/projectsection";
 import ContactSection from "./components/sections/contactsection";
 export default function Home() {
-	console.log(process.env.SECRET_VAR);
+	console.log("process.env.secretvar",process.env.SECRET_VAR);
 	return (
 		<main className="flex min-h-screen bg-mainWhite dark:bg-pageBlack transition-all duration-300">
 			<Navbar />
