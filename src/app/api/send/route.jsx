@@ -22,6 +22,7 @@ export async function POST(req, res) {
 				</>
 			),
 		});
+		console.log("res",res);
 		return NextResponse.json(data);
 	} catch (error) {
 		return NextResponse.json({ error });
