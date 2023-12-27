@@ -556,7 +556,7 @@ export const GithubIcon: React.FC<IconoProps> = ({ width = "128", height = "50" 
 		height={height}
 		viewBox="0 0 24 24"
 		xmlns="http://www.w3.org/2000/svg"
-		className="transition-all duration-200 ease-in-out hover:fill-mainOrange"
+		className="transition-all duration-300 ease-in-out hover:fill-mainOrange"
 	>
 		<g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
 		<g

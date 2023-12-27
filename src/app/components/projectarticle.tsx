@@ -49,7 +49,7 @@ const ProjectArticle: React.FC<ProjectProps> = ({
 			<div className="flex flex-col justify-center items-center lg:h-max w-fit lg:w-1/2 rounded">
 				<a
 					href={url}
-					className="transition-shadow duration-500 hover:shadow-mainOrange hover:shadow-md rounded"
+					className="transition-shadow duration-300 hover:shadow-mainOrange hover:shadow-md rounded"
 				>
 					<Image src={image} alt={ProjectTitle} className="rounded-lg" />
 				</a>
