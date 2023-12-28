@@ -37,11 +37,12 @@ const ProjectArticle: React.FC<ProjectProps> = ({
 				<div className="flex w-full mt-4 ">
 					<a
 						href={url}
+						target="blank"
 						className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-4 rounded"
 					>
 						Visit
 					</a>
-					<a className="fill-black dark:fill-white" href={githublink}>
+					<a className="fill-black dark:fill-white" href={githublink} target="blank">
 						<GithubIcon />
 					</a>
 				</div>
@@ -49,6 +50,7 @@ const ProjectArticle: React.FC<ProjectProps> = ({
 			<div className="flex flex-col justify-center items-center lg:h-max w-fit lg:w-1/2 rounded">
 				<a
 					href={url}
+					target="blank"
 					className="transition-shadow duration-300 hover:shadow-mainOrange hover:shadow-md rounded"
 				>
 					<Image src={image} alt={ProjectTitle} className="rounded-lg" />

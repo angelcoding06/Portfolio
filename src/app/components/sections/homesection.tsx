@@ -43,12 +43,14 @@ const HomeSection = () => {
 								<a
 									className="fill-black dark:fill-white"
 									href="https://linkedin.com/in/angelcoding06/"
+									target="blank"
 								>
 									<LinkedInIcon />
 								</a>
 								<a
 									className="fill-black dark:fill-white"
 									href="https://github.com/angelcoding06"
+									target="blank"
 								>
 									<GithubIcon />
 								</a>
