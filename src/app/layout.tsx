@@ -21,7 +21,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html className="scroll-smooth" lang="en">
+		<html className="scroll-smooth transition-all duration-300" lang="en">
 			<StrictMode>
 				<DarkModeProvider>
 					<body className={inter.className}>{children}</body>

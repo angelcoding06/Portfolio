@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
 	return (
-		<footer className="bg-gray-200 text-black dark:text-gray-300  dark:bg-mainBlack py-8 bg-opacity-100 border-slate-500 ">
+		<footer className="bg-gray-200 text-black dark:text-gray-300  dark:bg-mainBlack py-8 bg-opacity-100 border-slate-500 transition-all duration-300 ">
 			<div className="flex flex-col items-center text-center">
 				<p className="font-bold text-black dark:text-white text-base sm:text-lg mb-6 lg:text-2xl">
 					Created with passion, powered by creativity.
