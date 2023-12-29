@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ProfilePic from "../../../../public/profilepic.webp";
+import ProfilePic from "../../../../public/profilepic.jpg";
 import { GithubIcon, LinkedInIcon } from "../icons/icons";
 import Link from "next/link";
 const HomeSection = () => {
