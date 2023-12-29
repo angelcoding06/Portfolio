@@ -1,5 +1,5 @@
 import React from "react";
-import HomePageTiun from "../../../../public/HomePageTiUN_1.webp";
+import HomePageTiun from "../../../../public/HomePageTiUN.png";
 import ProjectArticle from "../projectarticle";
 
 const skills = ["NextJs", "Typescript", "TailwindCSS", "Vercel"];
