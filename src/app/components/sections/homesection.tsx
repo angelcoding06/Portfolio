@@ -6,7 +6,7 @@ import Link from "next/link";
 const HomeSection = () => {
 	const Title = " I'm Angel.";
 	const text =
-		"I'm Systems engineering student at National University of Colombia and Jr Front-End developer.";
+		"I'm a Systems engineering student at National University of Colombia and Jr Front-End developer.";
 	return (
 		<section className="pt-4 pb-24 sm:py-12 lg:py-48 scroll-my-48" id="home">
 			<div className="flex flex-col md:flex-row items-center justify-between">

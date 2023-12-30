@@ -12,7 +12,7 @@ const ContactSection = () => {
 				Contact
 			</h1>
 			<p className="font-poppins text-black dark:text-white text-base sm:text-lg mb-6 lg:text-xl">
-				I'm currently looking for new opportunities, my inbox is always open.
+				I'm currently looking for new opportunities, so my inbox is always open.
 				Whether you have a question or just want to say hi, I'll try my best to
 				get back to you! You can reach me at the links below.
 			</p>

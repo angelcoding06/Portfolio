@@ -28,7 +28,7 @@ const Aboutsection = () => {
 			</h1>
 			<div className="flex flex-col items-center content-center justify-between">
 				<h2 className=" font-semibold text-2xl hover:text-black dark:text-white pb-8">
-					Who I'm I?
+					Who am I?
 				</h2>
 				<p className="font-poppins text-black dark:text-white text-base sm:text-lg mb-6 lg:text-xl">
 					I'm <span className="text-mainOrange">Angel</span>, a software
@@ -39,9 +39,9 @@ const Aboutsection = () => {
 					familiar with agile development methodologies such as SCRUM.
 				</p>
 				<p className="font-poppins text-black dark:text-white text-base sm:text-lg mb-6 lg:text-xl">
-					When I'm not coding I like to play videogames like Valorant, watch
-					anime <i> (I'm currently watching One Piece)</i>, and read books, the
-					last I read was Nausea by Jean-Paul Sartre.
+					When I'm not coding,  I like playing videogames like <i>Valorant</i>, watching
+					anime <i> (I'm currently watching One Piece)</i>, and reading books. The
+					last one I read was <i>Nause</i> by Jean-Paul Sartre.
 				</p>
 				<article className="flex flex-col items-center gap-7 md:gap-14 mt-16 ">
 					<h2 className=" font-semibold text-2xl hover:text-black dark:text-white">
@@ -85,8 +85,7 @@ const Aboutsection = () => {
 							<p className="font-poppins text-black dark:text-white text-base sm:text-lg lg:text-xl">
 								I'm currently studying
 								<strong> Systems and Computing Engineering</strong> at the
-								National University of Colombia. I'm on my 8th semester and I'm
-								expected to graduate in <strong>2025</strong>.
+								National University of Colombia. I'm in 8th semester and xpect to graduate in <strong>2025</strong>.
 							</p>
 						</div>
 					</div>

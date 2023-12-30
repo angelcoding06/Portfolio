@@ -19,7 +19,7 @@ const ProjectSection = () => {
 						"TiUN is the non-official website of the National University of Colombia's marketplace. This project was developed using NextJs, Typescript, TailwindCSS and deployed on Vercel."
 					}
 					ProjectDescriptionoptional={
-						"The main features were; profile creation, authentication, products CRUD, global dark mode using custom hooks and context, add to cart, add to favorites and MercadoPago integration."
+						"The main features were: profile creation, authentication, products CRUD, global dark mode using custom hooks and context, add to cart, add to favorites and MercadoPago integration."
 					}
 					skills={skills}
 					image={HomePageTiun}

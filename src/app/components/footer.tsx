@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
 				</p>
 				<p className="font-poppins px-2 text-black dark:text-white text-inherit text-sm  sm:text-lg mb-6 lg:text-lg lg:px-28">
 					{
-						"I think coding is the closest thing we have like magic, not because we don't know what happens when something goes right or wrong, but because we, as software developers, can create anything and make it seems like magic to people that are not into sotware."
+						"I think coding is the closest thing we have to magic, not because we don't know what happens when something goes right or wrong, but because we, as software developers, can create anything and make it seem like magic to people that are not into sotware."
 					}
 				</p>
 				<p className="text-sm mt-4">Thank you for exploring my portfolio.</p>
