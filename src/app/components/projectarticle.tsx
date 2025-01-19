@@ -24,7 +24,7 @@ const ProjectArticle: React.FC<ProjectProps> = ({
 				<p className="font-poppins text-start text-black dark:text-white mb-8 mr-4 text-lg lg:text-xl lg:leading-normal justify-center">
 					{ProjectDescriptionoptional}
 				</p>
-				<div className="grid grid-cols-2 md:grid-cols-3 sm:grid-cols-4 w-full">
+				<div className="grid grid-cols-2 md:grid-cols-3 sm:grid-cols-4 w-full pt-28">
 					{skills.map((skill, index) => (
 						<span
 							key={index}

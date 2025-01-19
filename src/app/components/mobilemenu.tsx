@@ -1,7 +1,6 @@
 import React from "react";
 import NavLink from "./navlink";
-import DarkModeToggle from "./DarkModeToggle";
-import { useDarkMode } from "../context/DarkModeContext";
+
 type linkprops = {
 	links: {
 		title: string;
@@ -10,7 +9,7 @@ type linkprops = {
 	closeMenu: () => void;
 };
 const MobileMenu: React.FC<linkprops> = ({ links, closeMenu }) => {
-	const { modoOscuro, toggleModoOscuro } = useDarkMode();
+
 	return (
 		<aside className="flex flex-row justify-between mx-auto md:hidden">
 			<ul className="flex flex-col items-left pl-10 mb-2">
@@ -25,10 +24,6 @@ const MobileMenu: React.FC<linkprops> = ({ links, closeMenu }) => {
 				))}
 			</ul>
 			<div className="pr-12">
-				<DarkModeToggle
-					modoOscuro={modoOscuro}
-					toggleModoOscuro={toggleModoOscuro}
-				/>
 			</div>
 		</aside>
 	);

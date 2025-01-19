@@ -11,8 +11,7 @@ const DarkModeToggle: React.FC<DarkModeToggleProps> = ({
 	modoOscuro,
 	toggleModoOscuro,
 }) => {
-	// ...
-	// TODO: FIX keep darkmode even the page is refreshed
+	// TODO: FIX keep darkmode even the page is refreshed / FIXED
 	const [checked, setChecked] = useState(modoOscuro);
 
 	useEffect(() => {
